@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
+
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+  <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+  <link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+  <!-- <link rel="stylesheet" type="text/css" href="styles/courses.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="styles/courses_responsive.css"> -->
+
+
+  <style>
+    /* Google Font Link */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body>* {
+      position: relative;
+      z-index: 2;
+      color: white;
+      /* Ensures content is visible over the dark overlay */
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-image: url("https://kishugutraining.com/wp-content/uploads/2022/10/Fire-Safety-In-Buildings.webp");
+      background-size: cover;
+      background-position: center;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Black overlay with 50% opacity */
+      z-index: 1;
+    }
+
+    .login-form .container {
+      position: relative;
+      max-width: 1000px;
+      width: 100%;
+      background: #fff;
+      padding: 40px 30px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      perspective: 2700px;
+      border-radius: 8px;
+    }
+
+    .login-form .container .cover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      width: 50%;
+      z-index: 98;
+      transition: all 1s ease;
+      transform-origin: left;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+    }
+
+    .login-form .container #flip:checked~.cover {
+      transform: rotateY(-180deg);
+    }
+
+    .login-form .container #flip:checked~.forms .login-form {
+      pointer-events: none;
+    }
+
+    .login-form .container .cover .front,
+    .container .cover .back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .login-form .cover .back {
+      transform: rotateY(180deg);
+    }
+
+    .login-form .container .cover img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: 10;
+      border-radius: 0 8px 8px 0px;
+    }
+
+    .login-form .container .cover .text {
+      position: absolute;
+      z-index: 10;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-form .container .cover .text::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0.5;
+      background: #131b5e;
+      border-radius: 0 8px 8px 0px;
+    }
+
+    .login-form .cover .text .text-1,
+    .cover .text .text-2 {
+      z-index: 20;
+      font-size: 26px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+    }
+
+    .cover .text .text-2 {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .login-form .container .forms {
+      height: 100%;
+      width: 100%;
+      background: #fff;
+      padding: 0px 20px;
+    }
+
+    .login-form .container .form-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .login-form .form-content .login-form,
+    .form-content .signup-form {
+      width: calc(100% / 2 - 25px);
+    }
+
+    .login-form .forms .form-content .title {
+      position: relative;
+      font-size: 24px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .login-form .forms .form-content .title:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 25px;
+      background: #7d2ae8;
+    }
+
+    .login-form .forms .signup-form .title:before {
+      width: 20px;
+    }
+
+    .login-form .forms .form-content .input-boxes {
+      margin-top: 30px;
+    }
+
+    .login-form .forms .form-content .input-box {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      width: 100%;
+      margin: 10px 0;
+      position: relative;
+    }
+
+    .login-form .form-content .input-box input {
+      height: 100%;
+      width: 100%;
+      outline: none;
+      border: none;
+      padding: 0 30px;
+      font-size: 16px;
+      font-weight: 500;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .login-form .form-content .input-box input:focus,
+    .form-content .input-box input:valid {
+      border-color: #141755;
+    }
+
+    .login-form .form-content .input-box i {
+      position: absolute;
+      color: #121b5c;
+      font-size: 17px;
+    }
+
+    .login-form .forms .form-content .text {
+      font-size: 14px;
+      font-weight: 500;
+      color: #007c40;
+    }
+
+    .login-form .forms .form-content .text a {
+      text-decoration: none;
+    }
+
+    .login-form .forms .form-content .text a:hover {
+      text-decoration: underline;
+    }
+
+    .login-form .forms .form-content .button {
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    .login-form .forms .form-content .button input {
+      color: #fff;
+      background: #141755;
+      border-radius: 6px;
+      padding: 0;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+
+    .login-form .forms .form-content .button input:hover {
+      background: #5b13b9;
+    }
+
+    .login-form .forms .form-content label {
+      color: #5b13b9;
+      cursor: pointer;
+    }
+
+    .login-form .forms .form-content label:hover {
+      text-decoration: underline;
+    }
+
+    .login-form .forms .form-content .login-text,
+    .forms .form-content .sign-up-text {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .login-form .container #flip {
+      display: none;
+    }
+
+    @media (max-width: 730px) {
+      .login-form .container .cover {
+        display: none;
+      }
+
+      .login-form .form-content .login-form,
+      .form-content .signup-form {
+        width: 100%;
+      }
+
+      .login-form .form-content .signup-form {
+        display: none;
+      }
+
+      .login-form .container #flip:checked~.forms .signup-form {
+        display: block;
+      }
+
+      .login-form .container #flip:checked~.forms .login-form {
+        display: none;
+      }
+
+      .login-form .logo_img.d-flex.justify-content-center {
+        width: 100% !important;
+      }
+
+      .login-form .container {
+        position: relative;
+        max-width: 1000px;
+        width: 100%;
+        background: #fff;
+        padding: 20px 5px;
+      }
+    }
+
+    .bg_darkblue {
+      background: #242b5f !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h1 class="text-white fw-bold" style="font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 30px;text-transform:uppercase;">Global Academy Online</h1>
+  </div>
+  <div class="login-form">
+    <div class="container">
+      <!-- <input type="checkbox" id="flip"> -->
+      <div class="cover">
+        <div class="front">
+          <img
+            src="https://tebewebe.online/firetroops/wp-content/uploads/sites/106/2024/04/portrait-of-a-firefighter-in-safety-helmet-and-oxygen-mask-holding-a-chainsaw-e1714846926555.jpg"
+            alt="">
+          <div class="text">
+            <span class="text-1">WELCOME TO GLOBAL SAFETY STUDIES</span>
+            <span class="text-2">Global Safety Training & Consulting</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="logo_img d-flex justify-content-center" style="width:50%"><img src="images/GobalSafty.png" alt=""
+          width="90%">
+      </div>
+      <div class="forms">
+
+
+        <div class="form-content">
+          <div class="login-form">
+            <!-- <div class="title">Login</div> -->
+            <form action="#" id="loginForm">
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="fas fa-envelope"></i>
+                  <input type="text" placeholder="Enter your email" id="email" required>
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Enter your password" id="password" required>
+                </div>
+                <!-- <div class="text"><a href="#">Forgot password?</a></div> -->
+                <!-- <div class="button input-box">
+                  < type="button" value="Sumbit"></>
+                </div> -->
+                <div class="button input-box p-0 bg_darkblue">
+                  <button type="submit" class="btn  w-100 m-0 bg_darkblue text-white fw-bold">Register Now</button>
+                </div>
+
+
+              </div>
+
+              <div id="errorMessage" class="text-danger mt-3" style="display:none;">Invalid username or password</div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+
+  document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const sampleUsername = "admin.in";
+    const samplePassword = "1234";
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+
+    if (email === sampleUsername && password === samplePassword) {
+      alert('Login successful!');
+      window.location.href = "indexdemo.html";
+    } else {
+      const errorMessage = document.getElementById('errorMessage');
+      errorMessage.style.display = 'block';
+    }
+  });
+</script>
+
+</html>
