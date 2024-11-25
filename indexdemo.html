@@ -113,9 +113,9 @@
                                 <div class="logo_container" style="width: 50%;">
                                     <a href="#">
                                         <div class="logo_content d-flex flex-row align-items-end justify-content-start">
-                                            <div class="logo_img"><img src="images/GobalSafty.png" alt="">
+                                            <div class="logo_img">
+                                                <img src="images/GobalSafty.png" alt="">
                                             </div>
-                                            <!-- <div class="logo_text">learn</div> -->
                                         </div>
                                     </a>
                                 </div>
@@ -125,15 +125,10 @@
                                         <li><a href="#courseid">courses</a></li>
                                         <li><a href="#footerid">contact</a></li>
                                     </ul>
-                                    <!-- <div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div> -->
-
-                                    <!-- Hamburger -->
-
                                     <div class="hamburger menu_mm">
                                         <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
                                     </div>
                                 </nav>
-
                             </div>
                         </div>
                     </div>
@@ -328,11 +323,11 @@
                         <div class="card__overlay">
                             <div class="course_over_view">
                                 <div class="course_name">
-                                    <h2>London</h2>
-                                    <p>Big Ben</p>
+                                    <h2>Fire and Safety</h2>
+                                    <p>Fire and Safety focuses on preventing and mitigating risks associated with fires and other hazards.</p>
                                 </div>
                                 <div class="know_more">
-                                    <button class="know_more_btn"> <a href="coursedetails.html">Know More <i
+                                    <button class="know_more_btn"> <a href="Fire_safety_course.html">Know More <i
                                                 class="fa fa-angle-right mx-1" aria-hidden="true">
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i></i></a></button>
                                 </div>
@@ -346,11 +341,11 @@
                         <div class="card__overlay">
                             <div class="course_over_view">
                                 <div class="course_name">
-                                    <h2>London</h2>
-                                    <p>Big Ben</p>
+                                    <h2>Environmental,Social and Governance</h2>
+                                    <p>The Environmental aspect focuses on resource management and environmental conservation, the Social aspect assesses relationships with employees, communities, and stakeholders, and Governance evaluates corporate leadership, ethics, and transparency.</p>
                                 </div>
                                 <div class="know_more">
-                                    <button class="know_more_btn"> <a href="coursedetails.html">Know More <i
+                                    <button class="know_more_btn"> <a href="esgcourse.html">Know More <i
                                                 class="fa fa-angle-right mx-1" aria-hidden="true">
                                                 <i class="fa fa-angle-right" aria-hidden="true"></i></i></a></button>
                                 </div>
@@ -536,6 +531,23 @@
     <script src="plugins/video-js/Youtube.min.js"></script>
     <script src="plugins/parallax-js-master/parallax.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+  
 
 </body>
 

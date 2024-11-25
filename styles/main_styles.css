@@ -45,6 +45,9 @@
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -1727,4 +1730,11 @@ section {
 	.footer_logo_img img {
 		width: 50%;
 	}
+}
+.latest_post.mb-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  background: #f2f1f8;
+  padding: 15px;
 }

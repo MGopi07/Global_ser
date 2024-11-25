@@ -177,9 +177,9 @@ span svg {
   align-items: flex-end;
   justify-content: space-between; */
   position: absolute;
-  top: 40%;
+  top: 20%;
   width: 90%;
-  left: 20%;
+  left: 5%;
 }
 
 .know_more_btn {
@@ -201,9 +201,11 @@ span svg {
 }
 .course_name h2 {
   color: #fff !important;
+  font-size: 18px !important;
 }
 .course_name p {
   color: #fff !important;
+  font-size: 12px !important;
 }
 
 @media screen and (max-width: 470px) {
@@ -233,7 +235,7 @@ span svg {
     color: black !important;
   }
   .course_name p {
-    font-size: 12px;
+    font-size: 10px;
     color: black !important;
   }
 }
