@@ -1325,14 +1325,3 @@ section {
   margin-top: 3px;
 }
 /*----------*/
-@media only screen and (max-width: 480px) {
-  .coursedetails {
-    margin-top: 70px;
-    width: 100%;
-  }
-  .course_tite {
-    font-size: 16px !important;
-    text-transform: uppercase !important;
-    margin-bottom: 20px;
-}
-}

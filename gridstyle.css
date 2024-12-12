@@ -134,9 +134,9 @@ span svg {
 
 .course_over_view {
   position: absolute;
-  top: 20%;
+  top: 5%;
   width: 90%;
-  left: 5%;
+  /* left: 5%; */
 }
 
 .know_more_btn {
@@ -189,10 +189,10 @@ span svg {
   }
   .course_name h2 {
     font-size: 16px;
-    color: black !important;
+    color: white !important;
   }
   .course_name p {
     font-size: 10px;
-    color: black !important;
+    color: white !important;
   }
 }

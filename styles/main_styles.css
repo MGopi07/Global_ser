@@ -489,7 +489,6 @@ section {
   color: #ffffff;
   background: #ee1c25;
   border-radius: 15px;
-
 }
 .main_nav li a:hover {
   background: #ee1c25;
@@ -1597,8 +1596,7 @@ section {
   background: #f2f1f8;
   /* padding-top: 108px;
   padding-bottom: 90px; */
-	padding: 50px 0px;
-
+  padding: 50px 0px;
 }
 .footer .logo_container {
   position: absolute;
@@ -1684,13 +1682,13 @@ section {
   padding: 5px !important;
   background-color: #ee1c25;
 }
-.btn.know_more_btn:hover a{
+.btn.know_more_btn:hover a {
   padding-right: 10px;
-  transition:0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .btn.know_more_btn a {
   color: white;
-  transform: 0.4s ;
+  transform: 0.4s;
 }
 .about {
   width: 100%;
@@ -1727,9 +1725,9 @@ section {
   width: 100%;
 }
 @media only screen and (max-width: 990px) {
-	.footer_logo_img img {
-		width: 50%;
-	}
+  .footer_logo_img img {
+    width: 50%;
+  }
 }
 .latest_post.mb-4 {
   display: flex;
@@ -1737,4 +1735,19 @@ section {
   justify-content: space-between !important;
   background: #f2f1f8;
   padding: 15px;
+}
+@media only screen and (max-width: 480px) {
+  .coursedetails {
+    margin-top: 70px;
+    width: 100%;
+  }
+  .course_tite {
+    font-size: 16px !important;
+    text-transform: uppercase !important;
+    margin-bottom: 20px;
+  }
+}
+.text-blue{
+  color: #1a5bb9;
+  font-size: 17px;
 }
