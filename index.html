@@ -35,15 +35,7 @@
             margin-top: 150px !important;
         }
 
-        @media only screen and (max-width: 575px) {
-            .home {
-                margin-top: 30px !important;
-            }
 
-            .home_container {
-                top: 85px !important;
-            }
-        }
 
         .home_container {
             /* position: absolute; */
@@ -63,6 +55,24 @@
             background-position: center center;
 
         }
+        @media only screen and (max-width: 575px) {
+            .home {
+                margin-top: 30px !important;
+            }
+
+            .home_container {
+                top: 85px !important;
+                height: 200vh !important;
+            }
+            .home_content.text-center {
+                top: 40%;
+            }
+        }
+        .course_over{
+            top: 30%;
+        }
+
+      
     </style>
 
 </head>
@@ -315,112 +325,117 @@
                         Aenean id varius quam. Nullam bibendum interdum dui, ac tempor lorem convallis ut</div>
                 </div>
             </div>
-            <section class="grid_view_sec">
+            <!-- grid_view_sec -->
+            <section class="">
+                <div class="row p-3">
+                    <div class="col-lg-4 col-md-6 mt-3">
+                        <div class="grid_card">
+                            <div class="card__img">
+                                <img src="./images/course/1.jpg" alt="Big Ben">
+                                <div class="card__overlay">
+                                    <div class="course_over_view">
+                                        <div class="course_name">
+                                            <h2>Fire and Safety</h2>
+                                            <p>Fire and Safety focuses on preventing and mitigating risks associated
+                                                with fires
+                                                and other hazards.</p>
+                                        </div>
+                                        <div class="know_more">
+                                            <button class="know_more_btn"> <a href="Fire_safety_course.html">Know More
+                                                    <i class="fa fa-angle-right mx-1" aria-hidden="true">
+                                                        <i class="fa fa-angle-right"
+                                                            aria-hidden="true"></i></i></a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="grid_card">
-                    <div class="card__img">
-                        <img src="./images/course/1.jpg" alt="Big Ben">
-                        <div class="card__overlay">
-                            <div class="course_over_view">
-                                <div class="course_name">
-                                    <h2>Fire and Safety</h2>
-                                    <p>Fire and Safety focuses on preventing and mitigating risks associated with fires and other hazards.</p>
-                                </div>
-                                <div class="know_more">
-                                    <button class="know_more_btn"> <a href="Fire_safety_course.html">Know More <i
-                                                class="fa fa-angle-right mx-1" aria-hidden="true">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i></i></a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid_card">
-                    <div class="card__img">
-                        <img src="./images/course/6.jpg" alt="Eiffel Tower">
-                        <div class="card__overlay">
-                            <div class="course_over_view">
-                                <div class="course_name">
-                                    <h2>Environmental,Social and Governance</h2>
-                                    <p>The Environmental aspect focuses on resource management and environmental conservation, the Social aspect assesses relationships with employees, communities, and stakeholders, and Governance evaluates corporate leadership, ethics, and transparency.</p>
-                                </div>
-                                <div class="know_more">
-                                    <button class="know_more_btn"> <a href="esgcourse.html">Know More <i
-                                                class="fa fa-angle-right mx-1" aria-hidden="true">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i></i></a></button>
+                    <div class="col-lg-4 col-md-6 mt-3">
+                        <div class="grid_card">
+                            <div class="card__img">
+                                <img src="./images/course/4.jpg" alt="Colosseum">
+                                <div class="card__overlay">
+                                    <div class="course_over_view">
+                                        <div class="course_name">
+                                            <h2>BSS</h2>
+                                            <p>Advance Diploma in Fire adnd Industrial Safety Management</p>
+                                        </div>
+                                        <div class="know_more">
+                                            <button class="know_more_btn"> <a href="bss.html">Know More <i
+                                                        class="fa fa-angle-right mx-1" aria-hidden="true">
+                                                        <i class="fa fa-angle-right"
+                                                            aria-hidden="true"></i></i></a></button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid_card">
-                    <div class="card__img">
-                        <img src="./images/course/4.jpg" alt="Colosseum">
-                        <div class="card__overlay">
-                            <div class="course_over_view">
-                                <div class="course_name">
-                                    <h2>London</h2>
-                                    <p>Big Ben</p>
-                                </div>
-                                <div class="know_more">
-                                    <button class="know_more_btn"> <a href="coursedetails.html">Know More <i
-                                                class="fa fa-angle-right mx-1" aria-hidden="true">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i></i></a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid_card">
-                    <div class="card__img">
-                        <img src="./images/course/3.jpg" alt="Pisa Tower">
-                        <div class="card__overlay">
-                            <div class="course_over_view">
-                                <div class="course_name">
-                                    <h2>London</h2>
-                                    <p>Big Ben</p>
-                                </div>
-                                <div class="know_more">
-                                    <button class="know_more_btn"> <a href="coursedetails.html">Know More <i
-                                                class="fa fa-angle-right mx-1" aria-hidden="true">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i></i></a></button>
+                    <div class="col-lg-4 col-md-6 mt-3">
+                        <div class="grid_card">
+                            <div class="card__img">
+                                <img src="./images/course/3.jpg" alt="Pisa Tower">
+                                <div class="card__overlay">
+                                    <div class="course_over_view">
+                                        <div class="course_name">
+                                            <h2>OTHM LEVEL 6</h2>
+                                            <p> DIPLOMA IN OCCUPATIONAL SAFETY AND HEALTH</p>
+                                        </div>
+                                        <div class="know_more">
+                                            <button class="know_more_btn"> <a href="othm.html">Know More <i
+                                                        class="fa fa-angle-right mx-1" aria-hidden="true">
+                                                        <i class="fa fa-angle-right"
+                                                            aria-hidden="true"></i></i></a></button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid_card">
-                    <div class="card__img">
-                        <img src="./images/course/7.jpg" alt="Statue of Liberty">
-                        <div class="card__overlay">
-                            <div class="course_over">
-                                <div class="course_name">
-                                    <h2>London</h2>
-                                    <p>Big Ben</p>
-                                </div>
-                                <div class="know_more">
-                                    <button class="know_more_btn"> <a href="coursedetails.html">Know More <i
-                                                class="fa fa-angle-right mx-1" aria-hidden="true">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i></i></a></button>
+                    <div class="col-lg-6 col-md-6 mt-3">
+                        <div class="grid_card">
+                            <div class="card__img">
+                                <img src="./images/course/6.jpg" alt="Eiffel Tower">
+                                <div class="card__overlay">
+                                    <div class="course_over_view">
+                                        <div class="course_name">
+                                            <h2>Environmental,Social and Governance</h2>
+                                            <p>The Environmental aspect focuses on resource management and environmental
+                                                conservation, the Social aspect assesses relationships with employees,
+                                                communities, and stakeholders, and Governance evaluates corporate
+                                                leadership,
+                                                ethics, and transparency.</p>
+                                        </div>
+                                        <div class="know_more">
+                                            <button class="know_more_btn"> <a href="esgcourse.html">Know More <i
+                                                        class="fa fa-angle-right mx-1" aria-hidden="true">
+                                                        <i class="fa fa-angle-right"
+                                                            aria-hidden="true"></i></i></a></button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="grid_card">
-                    <div class="card__img">
-                        <img src="https://www.fondacoretrade.com.sg/wp-content/uploads/2019/08/safety-course-worker2.jpg"
-                            alt="Sydney Opera House">
-                        <div class="card__overlay">
-                            <div class="course_over_view">
-                                <div class="course_name">
-                                    <h2>London</h2>
-                                    <p>Big Ben</p>
-                                </div>
-                                <div class="know_more">
-                                    <button class="know_more_btn"> <a href="coursedetails.html">Know More <i
-                                                class="fa fa-angle-right mx-1" aria-hidden="true">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i></i></a></button>
+                    <div class="col-lg-6 col-md-6 mt-3">
+                        <div class="grid_card">
+                            <div class="card__img">
+                                <img src="./images/course/7.jpg" alt="Statue of Liberty">
+                                <div class="card__overlay">
+                                    <div class="course_over">
+                                        <div class="course_name">
+                                            <h2>HSE COURSE</h2>
+                                            <p>HSE COURSE MATERIALS & REFERENCE</p>
+                                        </div>
+                                        <div class="know_more">
+                                            <button class="know_more_btn"> <a href="hse.html">Know More <i
+                                                        class="fa fa-angle-right mx-1" aria-hidden="true">
+                                                        <i class="fa fa-angle-right"
+                                                            aria-hidden="true"></i></i></a></button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -547,7 +562,7 @@
             });
         });
     </script>
-  
+
 
 </body>
 
