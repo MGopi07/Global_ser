@@ -1759,3 +1759,10 @@ section {
   color: #6c6a74;
   margin-top: 3px;
 }
+.home_title{
+  text-transform: uppercase;
+}
+.section_title.text-center h2{
+  text-transform: uppercase;
+
+}
