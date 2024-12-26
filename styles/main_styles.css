@@ -844,7 +844,8 @@ section {
   color: #ffffff;
 }
 .home_subtitle {
-  max-width: 670px;
+  /* max-width: 670px; */
+  max-width: 800px;
   font-size: 15px;
   line-height: 2;
   color: #ffffff;
@@ -1627,7 +1628,7 @@ section {
   transition: all 200ms ease;
 }
 .footer_social ul li a i:hover {
-  color: #ffae00;
+  color: #076e21;
 }
 .copyright {
   font-size: 12px;
@@ -1660,7 +1661,7 @@ section {
   color: #ee1c25;
 }
 .footer_contact_info {
-  padding-right: 70px;
+  padding-right: 15px;
   margin-top: 26px;
 }
 .footer_contact_item:not(:last-child) {
@@ -1751,4 +1752,10 @@ section {
 .text-blue{
   color: #1a5bb9;
   font-size: 17px;
+}
+.footer_contact_line a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c6a74;
+  margin-top: 3px;
 }
