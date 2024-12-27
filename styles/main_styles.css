@@ -1766,3 +1766,12 @@ section {
   text-transform: uppercase;
 
 }
+.fa-solid.fa-file-excel{
+  color: #076e21;
+  font-size: 18px;
+}
+.fa-solid.fa-file-word{
+  color: #1d5fbf;
+  font-size: 18px;
+
+}
