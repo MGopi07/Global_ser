@@ -158,6 +158,9 @@
 ************/
 
 @media only screen and (max-width: 880px) {
+  .useful_link_boxone {
+    max-width: 33.3% !important;
+  }
 }
 
 /************
@@ -191,6 +194,7 @@
   .video_container_outer {
     height: 287px;
   }
+  
 }
 
 /************
@@ -249,9 +253,9 @@
     /* right: 30px;
 		bottom: 15px; */
     right: 40px;
-    bottom: 45px;
+    bottom: 80px;
   }
- 
+
   .menu_phone,
   .menu_social {
     font-size: 11px;
@@ -268,8 +272,7 @@
   .fa-instagram:before {
     content: "\f16d";
     color: #121b5c;
-
-}
+  }
   .header_search_button i {
     font-size: 14px;
   }
@@ -425,6 +428,9 @@
   .accordion {
     font-size: 14px;
   }
+  .useful_link_boxone {
+    max-width: 33.3% !important;
+  }
 }
 
 /************
@@ -432,6 +438,13 @@
 ************/
 
 @media only screen and (max-width: 539px) {
+  /* .nav-item{
+    width: 30%;
+  }
+  .nav-pills .nav-link{
+    font-size: 12px;
+  } */
+  
 }
 
 /************

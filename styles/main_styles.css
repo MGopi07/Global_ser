@@ -1775,3 +1775,17 @@ section {
   font-size: 18px;
 
 }
+.fa-solid.fa-file-pdf{
+  font-size: 16px;
+
+}
+@media only screen and (max-width: 880px) {
+  .useful_link_boxone {
+    max-width: 33.3% !important;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .useful_link_boxone {
+    max-width: 33.3% !important;
+  }
+}
